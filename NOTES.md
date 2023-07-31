@@ -21,3 +21,16 @@
 - jeżeli dla _find_ chce zignorować wielkość znaków to mogę użyć `-iname` zamiast '-name'
 - jeżeli chcę przez _find_ wyszukać typ np tylko katalogi to podaje `find . -type d` lub `find . -type f`
 
+## (8) How to Work with Directories in the Terminal with Bash
+- katalogi są zaznaczone na zielono w bashu
+- można zakładać wiele katalogów poleceniem `mkdir` po spacji
+- można robić katalog jeden poziom niżej, dwa poziomy niżej zwróci błąd, żeby to zmienić wystarczy podać parametr `-p`, który spowoduje utworzenie wszystkich folderów w ścieżce
+- `touch` jest do tworzenia plików, `mv`, `cp`, `rm`, `rmdir` - usuwanie **pustych** katalogów.
+
+## (9) How to View File Contents in the Terminal with Bash
+- `cat`, `head -n 5`, `tail -n 5`, `more` - wyświetlanie pliku w stronach
+- `less` - pozwala na więcej operacji - lista po wciśnięciu 'h', np. na wyszukiwanie po slashu '/'
+- `grep` - wyszukiwanie wzorca w pliku np. `grep "174" viewing-files/fake002.log`
+
+
+
