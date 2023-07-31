@@ -32,5 +32,16 @@
 - `less` - pozwala na więcej operacji - lista po wciśnięciu 'h', np. na wyszukiwanie po slashu '/'
 - `grep` - wyszukiwanie wzorca w pliku np. `grep "174" viewing-files/fake002.log`
 
+## (10) What are Environment variables?
+- `env` - zmienne środowiskowe
+- `echo $SHELL` - jak chcę zobaczyć jedną _env_ to podaje dolar '$' przed jej nazwą
+- użyteczne zmienne środowiskowe: `echo $HOME` i `echo $USER`, `echo $PATH`
+- tworzenie _env_ dostępnego tylko w tej sesji, jest niedostępne nawet w drugim oknie _bash_: `export newVar=value`
+- żeby zmienna środowiskowa istniała pomiędzy sesjami trzeba ją wprowadzić do plików startowych:
+    - `/etc/profile` - dla każdego użytkownika zalogowanego na tej maszynie
+    - `.profile` w folderze _home_ - dla tego użytkownika
+    - `.bashrc` też jest wołany przy uruchamianiu _basha_
+
+
 
 
