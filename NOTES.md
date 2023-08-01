@@ -42,6 +42,16 @@
     - `.profile` w folderze _home_ - dla tego użytkownika
     - `.bashrc` też jest wołany przy uruchamianiu _basha_
 
+## (11) How to Use Redirection and Pipelines in Bash
+- przekierowanie '>', dołączania '>>'
+- przekierowanie standardowych komunikatów błędów: `ls -l ./non-existing-dir 2> error.txt` - **2** oznacza stanardowe błędy; jest tak bo normalny wynik to strumień nr 1, a błędy to strumień nr 2
+- można przekierować strumień na inny strumień, np. zapisanie wyników i błędów do jednego pliku: `ls -l ./non-existing-dir > target.txt 2>&1` lub krótsza wersja w nowych bash-ach: `ls -l &> output2.txt`
+- przekierowanie do kolejnej komendy z użyciem `|`: `ls -l /usr/bin/ | grep echo`
+> jest komenda **sort** np. `ls -l /usr/bin/ | grep xz | sort`
+
+## (12) How to Modify File Permissions in Bash
+- _+x_ w _chmod_ powoduje dodanie wykonywanie do wszystkich 3 części do właściciela, grupy i wszystkich
+
 
 
 
